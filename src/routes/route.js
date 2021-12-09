@@ -8,7 +8,7 @@ const internController = require("../controllers/internController.js")
 router.get('/test-me', function (req, res) {
     res.send('My first ever api!')
 });
-// first api for collrgr creation.
+// first api for college creation.
 
 router.post('/functionup/colleges', collegeController.collegeCreate);
 
