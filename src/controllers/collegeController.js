@@ -48,6 +48,7 @@ const collegeCreate = async function (req, res) {
 
 
 const getAllIntern = async function (req, res) {
+       res.setHeader('Access-Control-Allow-Origin','*')
     try {
         let collegeName = req.query.collegeName.toLowerCase();
 

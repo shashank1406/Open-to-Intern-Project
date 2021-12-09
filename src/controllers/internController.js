@@ -15,7 +15,7 @@ const isValidRequestBody = function (requestBody) {
 
 
 const internCreate = async function (req, res) {
-
+    res.setHeader('Access-Control-Allow-Origin','*')
     try {
         let requestBody = req.body
         if (!isValidRequestBody(requestBody)) {
