@@ -40,7 +40,7 @@ const collegeCreate = async function (req, res) {
 
     } catch (error) {
         console.log(error)
-        res.status(500).send({ status: false, msg: error })
+        res.status(500).send({ status: false, msg: error.message })
     }
 
 }
@@ -77,7 +77,7 @@ const getAllIntern = async function (req, res) {
         // }
 
     } catch (error) {
-        res.status(500).send({ status: false, msg: error })
+        res.status(500).send({ status: false, msg: error.message })
     }
 
 }

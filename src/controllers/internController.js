@@ -66,7 +66,7 @@ const internCreate = async function (req, res) {
         const internCreate = await internModel.create(requestBody)
         res.status(200).send({ status: true, data: internCreate })
     } catch (error) {
-        res.status(500).send({ status: false, msg: error })
+        res.status(500).send({ status: false, msg: error.message })
     }
 }
 
